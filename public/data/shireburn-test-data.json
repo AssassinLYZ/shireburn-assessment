@@ -1,0 +1,204 @@
+{
+  "Employees": [
+    {
+      "Id": "1",
+      "FirstName": "Diana",
+      "LastName": "Arline",
+      "Gender": "Female",
+      "Occupation": "HR Manager",
+      "DateOfBirth": "1996-04-23",
+      "EmploymentDate": "2020-06-17",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "2",
+      "FirstName": "Clint",
+      "LastName": "Beckford",
+      "Gender": "Male",
+      "Occupation": "Supervisor",
+      "DateOfBirth": "1979-03-11",
+      "EmploymentDate": "2001-07-17",
+      "TerminationDate": "2025-09-25"
+    },
+    {
+      "Id": "3",
+      "FirstName": "Mark",
+      "LastName": "Attard",
+      "Gender": "Male",
+      "Occupation": "Senior Developer",
+      "DateOfBirth": "1984-11-06",
+      "EmploymentDate": "2011-09-18",
+      "TerminationDate": "2019-01-01"
+    },
+    {
+      "Id": "4",
+      "FirstName": "Conrad",
+      "LastName": "Borg",
+      "Gender": "Male",
+      "Occupation": "Junior Developer",
+      "DateOfBirth": "2003-03-05",
+      "EmploymentDate": "2025-01-01",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "5",
+      "FirstName": "Amber",
+      "LastName": "Cassar",
+      "Gender": "Female",
+      "Occupation": "Developer",
+      "DateOfBirth": "1997-04-26",
+      "EmploymentDate": "2020-02-18",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "6",
+      "FirstName": "Paul",
+      "LastName": "Micallef",
+      "Gender": "Male",
+      "Occupation": "Developer",
+      "DateOfBirth": "InvalidDate",
+      "EmploymentDate": "2021-12-13",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "7",
+      "FirstName": "Jonathan",
+      "LastName": "Mifsud",
+      "Gender": "Male",
+      "Occupation": "Developer",
+      "DateOfBirth": "1965-05-08",
+      "EmploymentDate": "1992-15-03",
+      "TerminationDate": "2004-01-17"
+    },
+    {
+      "Id": "8",
+      "FirstName": "Edward",
+      "LastName": "Fenech",
+      "Gender": "Male",
+      "Occupation": "Accountant",
+      "DateOfBirth": "1985-07-22",
+      "EmploymentDate": "2025-04-19",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "9",
+      "FirstName": "Charlie",
+      "LastName": "Beck",
+      "Gender": "Male",
+      "Occupation": "Intern",
+      "DateOfBirth": "2001-07-15",
+      "EmploymentDate": "2025-04-21",
+      "TerminationDate": "2025-07-21"
+    },
+    {
+      "Id": "10",
+      "FirstName": "Rodianne",
+      "LastName": "Camilleri",
+      "Gender": "Female",
+      "Occupation": "Accountant",
+      "DateOfBirth": "1989-09-03",
+      "EmploymentDate": "2017-08-11",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "11",
+      "FirstName": "Keith",
+      "LastName": "Bonnici",
+      "Gender": "Male",
+      "Occupation": "Support Agent",
+      "DateOfBirth": "1992-01-08",
+      "EmploymentDate": "2015-08-19",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "12",
+      "FirstName": "Joanne",
+      "LastName": "Caruana",
+      "Gender": "Female",
+      "Occupation": "Support Agent",
+      "DateOfBirth": "1984-04-18",
+      "EmploymentDate": "2016-11-16",
+      "TerminationDate": "2022-19-04"
+    },
+    {
+      "Id": "13",
+      "FirstName": "Emilia",
+      "LastName": "Vella",
+      "Gender": "Female",
+      "Occupation": "Senior Support Agent",
+      "DateOfBirth": "1971-02-23",
+      "EmploymentDate": "1989-06-12",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "14",
+      "FirstName": "Silvio",
+      "LastName": "Zammit",
+      "Gender": "Male",
+      "Occupation": "Sales",
+      "DateOfBirth": "1991-01-19",
+      "EmploymentDate": "2020-02-20",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "15",
+      "FirstName": "Steve",
+      "LastName": "Shay",
+      "Gender": "Male",
+      "Occupation": "Sales",
+      "DateOfBirth": "1987-07-11",
+      "EmploymentDate": "",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "16",
+      "FirstName": "Philip",
+      "LastName": "Ellul",
+      "Gender": "Male",
+      "Occupation": "",
+      "DateOfBirth": "1975-07-11",
+      "EmploymentDate": "1997-01-15",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "17",
+      "FirstName": "Elaine",
+      "LastName": "Vella",
+      "Gender": "",
+      "Occupation": "Product Owner",
+      "DateOfBirth": "1986-01-18",
+      "EmploymentDate": "2014-06-04",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "18",
+      "FirstName": "Petra",
+      "LastName": "Muscat",
+      "Gender": "Female",
+      "Occupation": "Marketing",
+      "DateOfBirth": "1994-07-21",
+      "EmploymentDate": "2015-04-17",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "19",
+      "FirstName": "Edward",
+      "LastName": "Vella",
+      "Gender": "Male",
+      "Occupation": "Marketing",
+      "DateOfBirth": "1995-03-16",
+      "EmploymentDate": "2018-04-21",
+      "TerminationDate": ""
+    },
+    {
+      "Id": "20",
+      "FirstName": "David",
+      "LastName": "Caruana",
+      "Gender": "Male",
+      "Occupation": "Marketing",
+      "DateOfBirth": "1981-05-27",
+      "EmploymentDate": "",
+      "TerminationDate": "2007-05-28"
+    }
+  ]
+}

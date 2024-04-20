@@ -8,17 +8,12 @@ import { tableStore } from '@/store/tableStore'
 
 const tableDataStore = tableStore()
 const { filterInput } = storeToRefs(tableDataStore)
-
-const props = defineProps({
-  placeHolder: String,
-  buttonName: String
-})
 </script>
 
 <template>
   <section class="section-card-panel">
     <div class="input">
-      <input type="text" name="" id="" :placeholder="props.placeHolder" v-model="filterInput" />
+      <input type="text" name="" id="" placeholder="Search by Occupation" v-model="filterInput" />
       <button v-if="filterInput.length === 0" class="filter-button" type="button">
         <i class="input-icon"><IconLoupe /></i>
       </button>
@@ -27,7 +22,7 @@ const props = defineProps({
       </button>
     </div>
     <RouterLink class="add-employee" to="/add-employee">
-      <i><IconPlus /></i>{{ props.buttonName }}
+      <i><IconPlus /></i>Add
     </RouterLink>
   </section>
 </template>

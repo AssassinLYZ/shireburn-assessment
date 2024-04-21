@@ -14,6 +14,18 @@ a,
   transition: 0.4s;
   padding: 3px;
 }
+.red {
+  color: red;
+}
+.blue {
+  color: cornflowerblue;
+}
+.yellow {
+  color: chocolate;
+}
+.black {
+  text-decoration: line-through;
+}
 
 @media (hover: hover) {
   a:hover {
@@ -21,7 +33,7 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1400px) {
   body {
     display: flex;
     place-items: center;

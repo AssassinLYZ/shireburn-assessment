@@ -38,6 +38,7 @@ function changeCurrentPage(id: number): any {
   height: 40px;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .section-pagination button {
   border: 1px solid #dedede;

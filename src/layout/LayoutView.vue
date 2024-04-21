@@ -21,11 +21,7 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1024px) {

@@ -3,6 +3,8 @@ import LoadingSpinner from '@/components/LoadingSpinner.vue'
 import { storeToRefs } from 'pinia'
 import { tableStore } from '@/store/tableStore'
 import router from '@/router'
+import { getStatus, getStatusClass } from '@/lib/utils/compareDates'
+import type { ModelValue } from '@vuepic/vue-datepicker'
 
 const tableDataStore = tableStore()
 const { employeeList, displayedEmployeeList } = storeToRefs(tableDataStore)
@@ -23,8 +25,7 @@ const selectEmployee = (id: string): any => {
           <th>Gender</th>
           <th>Occupation</th>
           <th>DateOfBirth</th>
-          <th>EmploymentDate</th>
-          <th>TerminationDate</th>
+          <th>Status</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -35,12 +36,13 @@ const selectEmployee = (id: string): any => {
           <td>{{ employee.Gender }}</td>
           <td>{{ employee.Occupation }}</td>
           <td>{{ employee.DateOfBirth }}</td>
-          <td>{{ employee.EmploymentDate }}</td>
-          <td>{{ employee.TerminationDate }}</td>
+          <td :class="getStatusClass(getStatus(employee.EmploymentDate, employee.TerminationDate))">
+            {{ getStatus(employee.EmploymentDate, employee.TerminationDate) }}
+          </td>
           <td>
             <div class="actions">
               <button @click="selectEmployee(employee.Id)">
-                <i>Select</i>
+                <i>Edit</i>
               </button>
             </div>
           </td>
@@ -48,9 +50,10 @@ const selectEmployee = (id: string): any => {
       </tbody>
       <tbody v-else>
         <tr>
-          <td :colspan="8">
+          <td :colspan="8" v-if="employeeList.length == 0">
             <LoadingSpinner />
           </td>
+          <td :colspan="8">No data</td>
         </tr>
       </tbody>
     </table>
@@ -59,7 +62,7 @@ const selectEmployee = (id: string): any => {
 
 <style scoped>
 .wrapper-table {
-  min-height: 101px;
+  min-height: 301px;
   max-height: calc(100vh - 370px);
   height: 100%;
   overflow-y: hidden;
@@ -83,6 +86,7 @@ table.custom-table thead th {
   text-align: left;
   height: 40px;
   padding: 0 20px;
+  white-space: nowrap;
 }
 
 table.custom-table tbody td {

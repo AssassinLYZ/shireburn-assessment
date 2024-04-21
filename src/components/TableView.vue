@@ -114,11 +114,11 @@ const getTableHeight: any = () => {
   -moz-box-shadow: 0px 0px 15px -10px rgba(66, 68, 90, 1);
   box-shadow: 0px 0px 15px -10px rgba(66, 68, 90, 1);
   height: calc(100vh - 260px);
-  min-height: 223px;
+  min-height: 423px;
 }
 @media (max-width: 350px) {
   .section-card {
-    min-height: 308px;
+    min-height: 318px;
   }
 }
 </style>

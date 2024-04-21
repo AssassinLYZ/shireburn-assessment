@@ -1,9 +1,10 @@
+<!-- eslint-disable @typescript-eslint/no-unused-vars -->
 <script setup lang="ts">
 import { ref, type Ref, watch, onMounted, onUnmounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import { tableStore } from '@/store/tableStore'
 
-// ---
+// --- get store
 const tableDataStore = tableStore()
 const {
   loadListOnce,
@@ -20,7 +21,7 @@ const {
 
 const refWrapperTable: Ref<HTMLDivElement | null> = ref(null)
 
-// ---
+// --- load data
 onMounted(async () => {
   tableDataStore.setUnseletectedEmployee()
 
@@ -77,7 +78,6 @@ watch(
       currentPage.value === 1 ? 0 : (currentPage.value - 1) * newRowsNumber,
       currentPage.value === 1 ? newRowsNumber : currentPage.value * newRowsNumber
     )
-    console.log(employeeList.value, displayedEmployeeList.value)
   }
 )
 
@@ -91,7 +91,6 @@ watch([() => currentPage.value, filterInput], ([newCurrentPage, newFilterInput])
 })
 
 const getTableHeight: any = () => {
-  console.log(refWrapperTable.value?.children[1].clientHeight)
   tableHeight.value = refWrapperTable.value?.children[1].clientHeight as number
 }
 </script>

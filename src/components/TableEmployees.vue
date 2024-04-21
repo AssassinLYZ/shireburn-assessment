@@ -4,7 +4,6 @@ import { storeToRefs } from 'pinia'
 import { tableStore } from '@/store/tableStore'
 import router from '@/router'
 import { getStatus, getStatusClass } from '@/lib/utils/compareDates'
-import type { ModelValue } from '@vuepic/vue-datepicker'
 
 const tableDataStore = tableStore()
 const { employeeList, displayedEmployeeList } = storeToRefs(tableDataStore)
@@ -70,7 +69,6 @@ const selectEmployee = (id: string): any => {
 table.custom-table {
   background-color: #fff;
   width: 100%;
-  /* text-align: left; */
   border-collapse: collapse;
   border-spacing: 10px;
   margin-top: 5px;
@@ -112,14 +110,6 @@ table.custom-table tbody tr td:first-child {
 table.custom-table tbody tr td:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-}
-@media (max-width: 680px) {
-}
-@media (max-width: 350px) {
-  .wrapper-table {
-    min-height: 181px;
-    max-height: calc(100vh - 415px);
-  }
 }
 
 .actions button {

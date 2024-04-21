@@ -42,9 +42,7 @@ export const tableStore = defineStore('tableStore', {
     async fetchAllEmployees() {
       try {
         this.employeeList = (await getAllEmployees()).Employees
-        console.log(this.employeeList, this.tableHeight)
       } catch (error) {
-        console.log(error)
         return error
       }
     },

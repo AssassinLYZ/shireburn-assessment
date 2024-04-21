@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+// import { RouterLink } from 'vue-router'
 import IconSearch from '@/components/icons/IconSearch.vue'
 import IconDelete from '@/components/icons/IconDelete.vue'
-import IconPlus from '@/components/icons/IconEcosystem.vue'
+// import IconPlus from '@/components/icons/IconEcosystem.vue'
 import { storeToRefs } from 'pinia'
 import { tableStore } from '@/store/tableStore'
 
@@ -101,9 +101,6 @@ const { filterInput } = storeToRefs(tableDataStore)
   background-color: hsla(160, 100%, 37%, 0.75);
 }
 @media (max-width: 680px) {
-  /* .section-card-panel input[type='text'] {
-    width: 80%;
-  } */
   .add-employee {
     font-size: 12px;
     width: 80px;

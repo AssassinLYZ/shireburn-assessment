@@ -27,11 +27,10 @@ const state = reactive<Employee>({
 })
 
 onMounted(() => {
-  console.log(employee.value)
   if (!employee.value) router.push('/')
 })
 
-const mustBigger = (value: string) => {
+const mustBigger = () => {
   if (!state.TerminationDate || !state.EmploymentDate) return true
   if (new Date(state.TerminationDate).getTime() < new Date(state.EmploymentDate).getTime())
     return false
@@ -62,13 +61,11 @@ const submitForm = async (e: Event) => {
       EmploymentDate: state.EmploymentDate || '',
       TerminationDate: state.TerminationDate || ''
     }
-    console.log()
     let index: number | null = null
     employeeList.value.find((employee, i) => {
       return employee.Id === _employee.Id && (index = i)
     })
     index !== null && (employeeList.value[index] = _employee)
-    console.log(employeeList.value, employee, index)
     status.value = 'show'
 
     isShowhint.value = true

@@ -17,10 +17,7 @@ import '@vuepic/vue-datepicker/dist/main.css'
 import { defineProps } from 'vue'
 
 const props = defineProps<{
-  width?: number
-  mode?: 'time' | 'date' | 'week' | 'month' | 'year'
   showTime?: boolean
-  showToday?: boolean
   modelType?: 'timestamp' | 'format'
 }>()
 

@@ -1,45 +1,36 @@
-# shireburn-vue3
+# 💻 Vue + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 in Vite.
+- It is a project for Shireburn Frontend Assessment
 
-## Recommended IDE Setup
+# 🐵 Features：
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Typescript used
+- Search by occupation
+- Fully responsive
+- Well structured
+- Validations and error handling
 
-## Type Support for `.vue` Imports in TS
+# 🏗️ Project Src Dir Structure
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- src
+  - assets: static files
+  - components：components going to be used for the whole project
+  - interfaces: type defined for check
+  - layout: layout for the whole project
+  - lib：
+    - api：encapsulation for Api Fetching
+    - utils: Fuctions encapsulation
+  - mock: normally store mock data( doesn't use in the project )
+  - router: lazy loading router for vue
+  - store: pinia store management
+  - styles: general styles
+  - views: pages
 
-## Customize configuration
+# 🏠 Additional Libraries used
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- @vuepic/vue-datepicker : date picker for input
+- @vuelidate : validate for form submit
 
-## Project Setup
+# 🎯Further Steps
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+I didn't add unit testing， If necessary， I can do it later
